@@ -15,8 +15,8 @@ public class Days {
     private String name;
     private int is_active;
 
-   @ManyToMany(mappedBy = "days")
-    Set<CurrentCourses> courses;
+  /* @ManyToMany(mappedBy = "days")
+    Set<CurrentCourses> courses;*/
 
 
 }

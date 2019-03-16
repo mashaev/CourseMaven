@@ -18,6 +18,6 @@ public class Students {
     private String info;
     private int age;
 
-@ManyToMany(mappedBy = "students")
-    Set<CurrentCourses> currentCourses;
+/*@ManyToMany(mappedBy = "students")
+    Set<CurrentCourses> currentCourses;*/
 }
