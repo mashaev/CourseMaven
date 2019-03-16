@@ -31,4 +31,17 @@ public class CurrentCourses {
     @ManyToOne
     @JoinColumn(name = "course_id")
     private Courses courses;
+
+    @ManyToMany
+            @JoinTable(name = "course_days",
+            joinColumns = @JoinColumn(name = "cur_curses_days"),
+            inverseJoinColumns = @JoinColumn(name = "days_id"))
+
+    Set<Days> days;
+
+    @ManyToMany
+            @JoinTable(name = "course_times",
+            joinColumns = @JoinColumn(name = "cur_course_id"),
+            inverseJoinColumns = @JoinColumn(name = "time_id"))
+    Set<Times> times;
 }
